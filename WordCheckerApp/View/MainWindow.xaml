@@ -1,0 +1,14 @@
+﻿<Window x:Class="WordCheckerApp.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Проверка документов Word" Height="450" Width="800">
+    <Grid>
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                <Button Content="Настройки шаблона" Command="{Binding ShowTemplateSettingsCommand}" Margin="5"/>
+                <Button Content="Проверка документа" Command="{Binding ShowDocumentCheckCommand}" Margin="5"/>
+            </StackPanel>
+            <ContentControl Content="{Binding CurrentView}" />
+        </DockPanel>
+    </Grid>
+</Window>

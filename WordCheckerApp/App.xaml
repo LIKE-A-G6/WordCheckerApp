@@ -1,0 +1,9 @@
+﻿<Application x:Class="WordCheckerApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:converters="clr-namespace:WordCheckerApp.Converters"
+             StartupUri="View/MainWindow.xaml">
+    <Application.Resources>
+        <converters:EqualityConverter x:Key="EqualityConverter"/>
+    </Application.Resources>
+</Application>
